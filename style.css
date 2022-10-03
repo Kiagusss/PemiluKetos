@@ -49,7 +49,7 @@ nav {
     align-items: center;
     position: relative;
     left: 38vw;
-    top: 10vh;
+    top: 8vh;
 }
 .kotak-1 img{
     width: 370px;
@@ -57,30 +57,29 @@ nav {
 }
 .kotak-2{
     width: 22vw;
-    height: 57vh;
+    height: 50vh;
     background-color: rgba(6,40,61,0.4);
     transform: rotate(-15deg);
     position: relative;
-    top: 50vh;
-    left: -20vw;
-}
+
+top: -10vh;}
 .kotak-3{
     width: 22vw;
     height: 57vh;
     background-color: rgba(6,40,61,0.4);
     transform: rotate(10deg);
     position: relative;
-    left: 22.5vw;
-    top: 25vh;
+    top: -80vh;
+    left: 70vw;
 }
 .judul {
-    position: absolute;
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: 15vw;
-    top: 25vh;
+    left: -10vw;
 
     
 }
@@ -129,8 +128,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 50vh;
+    top: 45vh;
     left: 5vw;}
+
 .tigan {
     width: 300px;
 }
@@ -138,4 +138,29 @@ nav {
     width: 300px;
     margin-right: 47vw;
 }
+.circle{
+    width: 105vw;
+    height: 30vh;
+    border-radius: 150% ;
+    background-color:white;
+    position: absolute;
+    top: 85vh;
+    left: -45px;
+}
+.btn-take-a-look{
+    position: absolute;
+    top: 90vh;
+    left: 40vw;
+    width: 300px;
+    height: 40px;
+    background-color: #449BD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 
+}
+.btn-take-a-look a{
+    text-decoration: none;
+    color: var(--color5);
+}
