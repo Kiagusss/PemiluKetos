@@ -1,0 +1,141 @@
+:root{
+    --color1: #EEF2E6;
+    --color2: #06283D;
+    --color3: #1363DF;
+    --color4: #47B5FF;
+    --color5: #DFF6FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li img {
+    width: 70px;
+}
+nav ul {
+    display: flex;
+    gap: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 75px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color5);
+}
+nav {
+    position: fixed;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(asset/background.png);
+    background-size: cover;
+    display: flex;
+}
+.kotak-1{
+    width: 24.5vw;
+    height: 50vh;
+    background-color: rgba(6,40,61,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 38vw;
+    top: 10vh;
+}
+.kotak-1 img{
+    width: 370px;
+    opacity: 40%;
+}
+.kotak-2{
+    width: 22vw;
+    height: 57vh;
+    background-color: rgba(6,40,61,0.4);
+    transform: rotate(-15deg);
+    position: relative;
+    top: 50vh;
+    left: -20vw;
+}
+.kotak-3{
+    width: 22vw;
+    height: 57vh;
+    background-color: rgba(6,40,61,0.4);
+    transform: rotate(10deg);
+    position: relative;
+    left: 22.5vw;
+    top: 25vh;
+}
+.judul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 15vw;
+    top: 25vh;
+
+    
+}
+.judul h1{
+    font-size: 180px;
+    letter-spacing: 5px;
+    margin-bottom: -100px;
+    color: var(--color1);
+    font-weight: 900;
+    opacity: 90%;
+}
+.judul h2{
+    font-size: 160px;
+    letter-spacing: 10px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--color2);
+    opacity: 80%;
+    color: transparent;
+    font-style: italic;
+    margin-left: -75px;
+    font-weight: 700;
+}
+.judul h2 span{
+    font-size: 160px;
+    letter-spacing: 0px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--color1);
+    opacity: 80%;
+    color: transparent;
+    font-style: italic;
+    margin-left: -10px;
+}
+.judul p{
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    top: -5vh;
+    left: 10vw;
+    color: var(--color1);
+    opacity: 80%;
+    letter-spacing: 2px;
+}
+.tigan-bianca {
+    width: 100%;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50vh;
+    left: 5vw;}
+.tigan {
+    width: 300px;
+}
+.bianca {
+    width: 300px;
+    margin-right: 47vw;
+}
+
