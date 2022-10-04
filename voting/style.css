@@ -19,11 +19,13 @@ body {
     box-sizing: border-box;
 }
 .judul h1 {
-    font-size: 40px;
+    font-size: 28px;
     text-align: center;
-    padding-top: 50px;
-    color: skyblue;
+    padding-top: 70px;
+    color: #EEF2E6;
     text-shadow: 1px 1px 4px black;
+    word-spacing: 8px;
+    letter-spacing: 2px;
 }
 .voting {
     width: 80%;
@@ -42,7 +44,7 @@ body {
     align-items: center;
 }
 .k-1 {
-    background-color: skyblue;
+    background-color: rgb(206, 244, 255);
     width: 70%;
     height: 90%;
     border-radius: 20px;
