@@ -832,16 +832,14 @@ if(mysqli_num_rows($query) <0 ){
 							<span class="nav-text">Apps</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">User </a>
+                            
                                 <ul aria-expanded="false">
                                     <li><a href="user-list-datatable.html">User List</a></li>
+                                
                                 </ul>
-                            </li>
-
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
+							<!-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidate</a> -->
                                 <ul aria-expanded="false">
-									<li><a href="ecom-product-list.html">Product List</a></li>
-									<li><a href="ecom-product-detail.html">Product Details</a></li>
+									<li><a href="ecom-product-list.php">List Candidate</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -947,7 +945,7 @@ if(mysqli_num_rows($query) <0 ){
 													<div class="visi-misi" style="display: flex; margin-left: 7px;">
 														<div class="visi">
 															<h3 style="margin-left: 70px; margin-top: 10px;">Visi</h3>
-															<textarea name="visi" id="visi" cols="26.5" rows="5"> <?php echo $data['visi']?></textarea>
+															<textarea name="visi" id="visi" cols="26.5" rows="5" value="<?php echo $data['visi']?>"></textarea>
 														</div>
 														<div class="misi" style="margin-left: 70px;">
 															<h3 style="margin-left: 70px; margin-top: 10px;">Misi</h3>

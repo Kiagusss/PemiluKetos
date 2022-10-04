@@ -5,7 +5,7 @@ include 'koneksi.php';
     $query = mysqLi_query($connect, $sql); 
     $data = mysqli_fetch_assoc($query); 
 
-if(mysqli_num_rows($query) < 1 ){ 
+if(mysqli_num_rows($query) <0 ){ 
     die("data tidak ditemukan...");
 }  
 ?>
@@ -832,16 +832,14 @@ if(mysqli_num_rows($query) < 1 ){
 							<span class="nav-text">Apps</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">User </a>
+                            
                                 <ul aria-expanded="false">
                                     <li><a href="user-list-datatable.html">User List</a></li>
+                                
                                 </ul>
-                            </li>
-
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
+							<!-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidate</a> -->
                                 <ul aria-expanded="false">
-									<li><a href="ecom-product-list.html">Product List</a></li>
-									<li><a href="ecom-product-detail.html">Product Details</a></li>
+									<li><a href="ecom-product-list.php">List Candidate</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -935,7 +933,8 @@ if(mysqli_num_rows($query) < 1 ){
 													<div class="paslon-1" style="display: flex; margin-top: 30px;" >
 														<div class="ketua">
 															<h3 style="margin-left: 40px;">Nama ketua</h3>
-															<input type="text" name="nama_ketua" id="nama" style="height: 30px; border-radius: 10px; background-color: #2C254A; border: none; color: white; font-size: 17px; text-align: center;" value="<?php echo $data['nama_ketua']?>"required="required" >
+															<!-- <input type="text" name="nama_ketua" value="<?php echo $data['nama_ketua']?>"required="required" > -->
+															<input type="text" name="nama_ketua" id="nama" style="height: 30px; border-radius: 10px; background-color: #2C254A; border: none; color: white; font-size: 17px; text-align: center;" value="<?php echo $data['nama_ketua']?>">
 														</div>
 														<div class="wakil" style="margin-left: 50px;">
 															<h3 style="margin-left: 40px;">Nama Wakil</h3>
@@ -951,7 +950,6 @@ if(mysqli_num_rows($query) < 1 ){
 														<div class="misi" style="margin-left: 70px;">
 															<h3 style="margin-left: 70px; margin-top: 10px;">Misi</h3>
 															<textarea name="visi" id="visi" cols="26.5" rows="5"> <?php echo $data['misi']?></textarea>
-														<textarea ></textarea>
 														</div>
 													</div>
 													<div class="simpan">
