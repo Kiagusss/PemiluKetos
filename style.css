@@ -356,6 +356,7 @@ nav {
     justify-content: center;
     align-items: center; 
     display: flex;
+
 }
 .vote .card1 h3{
     position: absolute;
@@ -373,6 +374,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 18vw;
+    border: 0.5px solid black;
 }
 .kandidat2{
     width: 250px;
