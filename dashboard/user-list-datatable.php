@@ -46,7 +46,7 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
+            <a href="index.php" class="brand-logo">
               
 				<h4 style="margin-top: 10px; font-size: 15px">Dashboard</h4>
                
@@ -686,7 +686,7 @@
 							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard Light</a></li>
+							<li><a href="index.php">Dashboard Light</a></li>
 						</ul>
 
                     </li>
@@ -701,9 +701,9 @@
                                     <li><a href="user-list-datatable.html">User List</a></li>
                                 
                                 </ul>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidate</a>
+							<!-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidate</a> -->
                                 <ul aria-expanded="false">
-									<li><a href="ecom-product-list.html">List Candidate</a></li>
+									<li><a href="ecom-product-list.php">List Candidate</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -744,25 +744,29 @@
 									</tr>
 								</thead>
 								<tbody>
+								<?php
+                	$sql = "SELECT * FROM data_siswa";
+                	$query = mysqli_query ($connect,$sql);
+                	while ($data= mysqli_fetch_array($query)){
+                   				 echo"
 									<tr>
 										<td>
-											<h6>1.</h6>
+											<h6>$data[id]</h6>
 										</td>
 										<td>
-											<div class="media style-1">
-												<div class="media-body">
-													<h6>John Doe</h6>
-												</div>
-											</div>
+													<h6>$data[nama]</h6>
 										</td>
 										<td>
-											<div>
-												<h6>England</h6>
-											</div>
+												<h6>$data[kelas]</h6>
 										</td>
-										
-									</tr>
+										 
+										<td>
+												<h6>$data[pilihan]</h6>
+									</tr>";
+					}
+									?>
 								</tbody>
+								
 							</table>
 						</div>
 					</div>

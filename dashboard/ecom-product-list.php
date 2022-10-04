@@ -52,7 +52,7 @@ include 'koneksi.php';
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
+            <a href="index.php" class="brand-logo">
                 <h4 style="margin-top: 10px; font-size: 15px">Dashboard</h4>
             </a>
 
@@ -776,23 +776,24 @@ include 'koneksi.php';
 							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard Light</a></li>
+							<li><a href="index.php">Dashboard Light</a></li>
 						</ul>
 
                     </li>
-					<li class="nav-label">Apps</li>
+					<li class="nav-label">Data</li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 						<i class="flaticon-077-menu-1"></i>
-							<span class="nav-text">Apps</span>
+							<span class="nav-text">Data</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">User</a>
+                            
                                 <ul aria-expanded="false">
-                                    <li><a href="user-list-datatable.html">User List</a></li>
+                                    <li><a href="user-list-datatable.php">User List</a></li>
+                                
                                 </ul>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidat</a>
+							<!-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidate</a> -->
                                 <ul aria-expanded="false">
-									<li><a href="ecom-product-list.html">Candidat Detail</a></li>
+									<li><a href="ecom-product-list.php">List Candidate</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -916,7 +917,7 @@ include 'koneksi.php';
                                     <div class="col-md-7 col-xxl-12">
                                         <div class="new-arrival-content position-relative">
 										<?php
-											$sql = "SELECT * FROM candidat_2";  
+											$sql = "SELECT * FROM candidat_1";  
 											$query = mysqli_query ($connect, $sql); 
 								
 											while($data = mysqli_fetch_array($query))

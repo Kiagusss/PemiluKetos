@@ -1,5 +1,18 @@
 ﻿<?php
 include 'koneksi.php';
+
+$query ="SELECT * FROM data_siswa WHERE pilihan='1'";
+    $query_run = mysqli_query($connect, $query);
+    $row = mysqli_num_rows($query_run);
+
+    $query1 ="SELECT * FROM data_siswa WHERE pilihan='2'";
+    $query_run1 = mysqli_query($connect, $query1);
+    $row1 = mysqli_num_rows($query_run1);
+
+	$query2 ="SELECT * FROM data_siswa";
+	$query_run2 = mysqli_query($connect, $query2);
+	$row2 = mysqli_num_rows($query_run2)
+	
 ?>
 
 
@@ -53,7 +66,7 @@ include 'koneksi.php';
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
+            <a href="index.php" class="brand-logo">
                 <h4 style="margin-top: 10px; font-size: 15px">Dashboard</h4>
             </a>
 
@@ -725,26 +738,26 @@ include 'koneksi.php';
 							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard Light</a></li>
+							<li><a href="index.php">Dashboard Light</a></li>
 
                     </li>
-					<li class="nav-label">Apps</li>
+					<li class="nav-label">Data</li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 						<i class="flaticon-077-menu-1"></i>
-							<span class="nav-text">Apps</span>
+							<span class="nav-text">Data</span>
 						</a>
                         <ul aria-expanded="false">
                             
                                 <ul aria-expanded="false">
-                                    <li><a href="user-list-datatable.html">User List</a></li>
+                                    <li><a href="user-list-datatable.php">User List</a></li>
+									<li><a href="ecom-product-list.php">Candidat List</a></li>
                                 </ul>
                             </li>
 							
                                 </ul>
                             </li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidat</a>
                                 <ul aria-expanded="false">
-									<li><a href="ecom-product-list.php">Candidat List</a></li>
+									
                                 </ul>
                             </li>
                         </ul>
@@ -805,7 +818,7 @@ include 'koneksi.php';
 										</filter>
 										</defs>
 									</svg>
-									<p style="font-size: 20px;">0</p>
+									<p style="font-size: 20px;"><?php echo $row; ?></p>
 								</p>	
 							</div>
 						</div>
@@ -830,7 +843,7 @@ include 'koneksi.php';
 										</filter>
 										</defs>
 									</svg>
-									<p style="font-size: 20px;">0</p>
+									<p style="font-size: 20px;"><?php echo $row1; ?></p>
 								</p>	
 							</div>
 						</div>
@@ -855,7 +868,7 @@ include 'koneksi.php';
 										</filter>
 										</defs>
 									</svg>
-									<p style="font-size: 20px;">0</p>
+									<p style="font-size: 20px;"><?php echo $row2; ?></p>
 								</p>	
 							</div>
 						</div>
