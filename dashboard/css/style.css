@@ -11037,7 +11037,7 @@ svg.pulse-svg {
   .rtl .text-right {
     text-align: left !important; }
   .rtl .text-left {
-    text-align: right !important; }
+    text-align: center !important; }
   @media (min-width: 576px) {
     .rtl .text-sm-right {
       text-align: left !important; }
