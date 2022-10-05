@@ -31,6 +31,10 @@ nav ul {
     margin-left: 75px;
 }
 
+.riwayat table tr{
+    color: white;
+}
+
 nav ul li a {
     text-decoration: none;
     color: var(--color1);

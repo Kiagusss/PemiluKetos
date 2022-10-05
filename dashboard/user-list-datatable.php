@@ -698,7 +698,7 @@
                         <ul aria-expanded="false">
                             
                                 <ul aria-expanded="false">
-                                    <li><a href="user-list-datatable.html">User List</a></li>
+                                    <li><a href="user-list-datatable.php">User List</a></li>
                                 
                                 </ul>
 							<!-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidate</a> -->
@@ -727,11 +727,9 @@
 				<div class="card">
 					<div class="card-header d-sm-flex d-block">
 						<div class="mr-auto mb-sm-0 mb-3">
-							<h4 class="card-title mb-2">User Listing</h4>
+							<h4 class="card-title mb-2">List Data Pemilih	</h4>
 							<span>Lorem Ipsum sit amet</span>
 						</div>
-						<a href="javascript:void(0);" class="btn btn-info light mr-3"><i class="las la-download scale3 mr-2"></i>Import Csv</a>
-						<a href="javascript:void(0);" class="btn btn-info">+ Add Customer</a>
 					</div>
 					<div class="card-body">
 						<div class="table-responsive">
@@ -741,30 +739,27 @@
 										<th>Id</th>
 										<th>Nama</th>
 										<th>Kelas</th>
+										<th>pilihan</th>
 									</tr>
 								</thead>
 								<tbody>
+								
 								<?php
-                	$sql = "SELECT * FROM data_siswa";
-                	$query = mysqli_query ($connect,$sql);
-                	while ($data= mysqli_fetch_array($query)){
-                   				 echo"
-									<tr>
-										<td>
-											<h6>$data[id]</h6>
-										</td>
-										<td>
-													<h6>$data[nama]</h6>
-										</td>
-										<td>
-												<h6>$data[kelas]</h6>
-										</td>
-										 
-										<td>
-												<h6>$data[pilihan]</h6>
-									</tr>";
-					}
-									?>
+								include 'koneksi.php';
+
+                $sql = "SELECT * FROM data_siswa";
+                $query = mysqli_query ($connect,$sql);
+                while ($data= mysqli_fetch_array($query)){
+                    echo"
+                    <tr class='data'>
+                    <td>$data[id]</td>
+                    <td>$data[nama]</td>
+                    <td>$data[kelas]</td>
+                    <td>$data[pilihan]</td>
+            </tr>
+        ";
+                } 
+        ?>
 								</tbody>
 								
 							</table>
