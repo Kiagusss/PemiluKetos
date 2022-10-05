@@ -874,106 +874,24 @@ $query ="SELECT * FROM data_siswa WHERE pilihan='1'";
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xl-9 col-xxl-8">
-						<div class="card">
-							<div class="card-header border-0 flex-wrap pb-0">
-								<div class="mb-3">
-									<h4 class="fs-20 text-black">Chart</h4>
-									<p class="mb-0 fs-12 text-black">Grafik Data Polling</p>
-								</div>
-								
-							</div>
-							<div class="card-body pb-2 px-3">
-								<div id="marketChart" class="market-line"></div>
-							</div>
-						</div>
-					</div>
+					
+
+				<div class="riwayatvote">
+					<table>
+						<tr>
+							<th>Id</th>
+							<th>Nama</th>
+							<th>Kelas</th>
+							<th>Pilihan</th>
+						</tr>
+						<tr>
+							
+						</tr>
+					</table>
+
 				</div>
-				<div class="row">
-					<div class="col-xl-6 col-xxl-12">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="card">
-									<div class="card-header border-0 pb-0">
-										<h4 class="mb-0 fs-20 text-black">Kandidat 1</h4>
-										<div class="dropdown custom-dropdown mb-0 tbl-orders-style">
-											<div class="btn sharp tp-btn" data-toggle="dropdown">
-												<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg>
-											</div>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="javascript:void(0);">Details</a>
-												<a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-											</div>
-										</div>
-									</div>
-									<div class="card-body p-3 pb-0">
-										<div class="table-responsive">
-											<table class="table text-center bg-info-hover tr-rounded order-tbl">
-												<thead>
-													<tr>
-														<th class="text-center">Ketua</th>
-														<th class="text-right">Wakil</th>
-													</tr>
-												</thead>
-												<tbody>
-												<?php
-                      $sql = ("SELECT*FROM candidate ORDER BY nomor limit 3");
-                      $query = mysqli_query($connect, $sql);
-                      while($data = mysqli_fetch_array($query)){
-                        echo"
-													<tr>
-														<td>$data[nama_ketua]</td>
-														<td>$data[nama_wakil]</td>
-													</tr>
-													";}?>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>	
-							</div>
-							<div class="col-sm-6">
-								<div class="card">
-									<div class="card-header border-0 pb-0">
-										<h4 class="mb-0 text-black fs-20">Kandidat 2</h4>
-										<div class="dropdown custom-dropdown mb-0 tbl-orders-style">
-											<div class="btn sharp tp-btn" data-toggle="dropdown">
-												<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-												</svg>
-											</div>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="javascript:void(0);">Details</a>
-												<a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-											</div>
-										</div>
-									</div>
-										<div class="table-responsive">
-											<table class="table text-center bg-warning-hover tr-rounded order-tbl" style="margin-top: 10px;">
-												<thead>
-													<tr>
-														<th class="text-left" style="margin-top: 10px;">Id</th>
-														<th class="text-center">Nama</th>
-														<th class="text-right">Kelas</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="text-left">82.3</td>
-														<td>0.15</td>
-														<td class="text-right">$134,12</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
+							
+				
 								</div>
 							</div>
 							
@@ -982,6 +900,8 @@ $query ="SELECT * FROM data_siswa WHERE pilihan='1'";
 						</div>
 					</div>
 				</div>
+
+				
 			</div>
 		</div>
         <!--**********************************

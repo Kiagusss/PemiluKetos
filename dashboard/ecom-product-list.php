@@ -883,11 +883,9 @@ include 'koneksi.php';
 									{ 
 										echo" 
 											<b>
-												<tr>No <span class='item'><td>$data[nomor]</td> </span> </tr> <br>
-												<tr>Nama Calon Ketua : <span class='item'><td>$data[nama_ketua]</td> </span> </tr> <br>
-												<tr>Nama Calon Wakil Ketua : <span class='item'><td>$data[nama_wakil]</td> </span> </tr> <br>
-												<tr>Visi : <br> <span class='item'><td>$data[visi]</td> </span> </tr> <br>
-												<tr>Misi : <br> <span class='item'><td>$data[misi]</td> </span> </tr> 
+												<tr>No <span class='item'>1</td> </span> </tr> <br>
+												<tr>Nama Calon Ketua : <span class='item'><td>Nalendra</td> </span> </tr> <br>
+												<tr>Nama Calon Wakil Ketua : <span class='item'><td>Sulistiawati</td> </span> </tr> <br>
 											</b>
 										</div>
 										"
@@ -896,7 +894,7 @@ include 'koneksi.php';
 
 										
     </table>
-										<button style="background-color: #558b2f; border: 0px; width: 100px; height: 30px; border-radius: 20px; margin-left: 200px; margin-top: 20px;"><a href="form-edit-1.php" style="color: #ffff;">Edit</a></button>
+										<button style="background-color: #558b2f; border: 0px; width: 100px; height: 30px; border-radius: 20px; margin-left: 200px; margin-top: 20px;"><a href="form-edit-1.php" style="color: #ffff;">Details</a></button>
                                     </div>
 									
                                 </div>
@@ -924,17 +922,15 @@ include 'koneksi.php';
 											{ 
 												echo" 
 													<b>
-														<tr>No <span class='item'><td>$data[nomor]</td> </span> </tr> <br>
-														<tr>Nama Calon Ketua : <span class='item'><td>$data[nama_ketua]</td> </span> </tr> <br>
-														<tr>Nama Calon Wakil Ketua : <span class='item'><td>$data[nama_wakil]</td> </span> </tr> <br>
-														<tr>Visi : <br> <span class='item'><td>$data[visi]</td> </span> </tr> <br>
-														<tr>Misi : <br> <span class='item'><td>$data[misi]</td> </span> </tr> 
+														<tr>No <span class='item'><td>1</td> </span> </tr> <br>
+														<tr>Nama Calon Ketua : <span class='item'><td>Rafqi</td> </span> </tr> <br>
+														<tr>Nama Calon Wakil Ketua : <span class='item'><td>Omar</td> </span> </tr> <br>
 													</b>
 												</div>
 												"
 											;}
 										?>
-										<button style="background-color: #558b2f; border: 0px; width: 100px; height: 30px; border-radius: 20px; margin-left: 200px; margin-top: 20px;"><a href="form-edit-2.php" style="color: #ffff;">Edit</a></button>
+										<button style="background-color: #558b2f; border: 0px; width: 100px; height: 30px; border-radius: 20px; margin-left: 200px; margin-top: 20px;"><a href="form-edit-2.php" style="color: #ffff;">Details</a></button>
                                     </div>
                                 </div>
                             </div>
