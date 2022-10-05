@@ -59,11 +59,13 @@ nav {
     position: relative;
     left: 38vw;
     top: 8vh;
+    z-index: 0;
 }
 
 .kotak-1 img {
     width: 370px;
     opacity: 40%;
+    z-index: 0;
 }
 
 .kotak-2 {
@@ -105,6 +107,7 @@ nav {
     color: var(--color1);
     font-weight: 900;
     opacity: 90%;
+    z-index: 0;
 }
 
 .judul h2 {
@@ -117,6 +120,7 @@ nav {
     font-style: italic;
     margin-left: -75px;
     font-weight: 700;
+    z-index: -1;
 }
 
 .judul h2 span {
@@ -562,29 +566,40 @@ nav {
     letter-spacing: 10px;
 }
 
+/* hasil vote */
+
+
 .hasilvote{
     display: flex;
     flex-direction: column;
-    gap: 20vh;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100vh;
     background-image: url(asset/background.png);
     background-position-x: 50%;
-
 }
 .hasilvote h1{
-    color: var(--color2);
-    font-size: 50px;
-    letter-spacing: 0px;
+    font-size: 100px;
+    letter-spacing: 5px;
+    margin-bottom: -100px;
+    color: var(--color1);
     font-weight: 900;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: var(--color5);
+    opacity: 90%;
 }
+.hasilvote h2{
+    font-size: 60px;
+    letter-spacing: 10px;
+    opacity: 80%;
+    color: --;
+    font-style: italic;
+    margin-left: 20px;
+    font-weight: 700;
+    margin-top:90px;
+}   
 .inicard{
     display: flex;
     gap: 30vw;
+    margin-top: 10vh;
 }
 .card1{
     width: 20vw;
@@ -621,4 +636,23 @@ nav {
     color: var(--color2);
     font-size: 16px;
     font-weight: 600;
+    position: absolute;
+    top: 80vh;
+    left: 45.5vw;
+    z-index: 2;
+}
+.tigan-bianka{
+    display: flex;
+    gap: 35vw;
+    justify-content: center;
+    position: absolute;
+    left: 15vw;
+    top: 65vh;
+    z-index: 0;
+}
+.tigaaan{
+    width: 250px;
+}
+.biankaa{
+    width: 250px;
 }
