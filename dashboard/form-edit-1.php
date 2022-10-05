@@ -822,7 +822,7 @@ if(mysqli_num_rows($query) <0 ){
 							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard Light</a></li>
+							<li><a href="index.php">Dashboard Light</a></li>
 						</ul>
 
                     </li>
@@ -834,7 +834,7 @@ if(mysqli_num_rows($query) <0 ){
                         <ul aria-expanded="false">
                             
                                 <ul aria-expanded="false">
-                                    <li><a href="user-list-datatable.html">User List</a></li>
+                                    <li><a href="user-list-datatable.php">User List</a></li>
                                 
                                 </ul>
 							<!-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Candidate</a> -->

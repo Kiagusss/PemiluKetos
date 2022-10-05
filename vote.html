@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylevote.css">
+</head>
+
+<body>
+    <form action="vote.php" method="post">
+        <div class="data">
+            <h1
+                style="margin-left: 31.5vw;font-size: 40px; padding-top: 50px; color: #EEF2E6;text-shadow: 1px 1px 4px black; letter-spacing: 5px;">
+                Masukkan Data Diri</h1>
+            <div class="background-input"
+                style="width: 650px; margin:auto; background-color: aliceblue; height: 300px; border-radius: 30px; margin-top: 15px;">
+                <div class="input" style="margin-left: 40px;">
+
+                    <h2
+                        style="margin-left:270px; font-size: 20px; padding-top: 30px; font-family: 'poppins'; font-weight: 700; color: #145b77; letter-spacing: 5px;">
+                        id</h2>
+                    <input type="text" name="id" id="id"
+                        style="border: none; background-color: skyblue; width:580px; height: 40px; font-size: 20px; border-radius: 10px; text-align: center; font-weight: 500;">
+                    <h2
+                        style="margin-left:240px; font-size: 20px; padding-top: 20px; font-family: 'poppins'; font-weight: 700; color: #145b77; letter-spacing: 5px;">
+                        Nama</h2>
+                    <input type="text" name="nama" id="nama"
+                        style="border: none; background-color: skyblue; width:580px; height: 40px; font-size: 20px; border-radius: 10px; text-align: center; font-weight: 500;">
+                    <h2
+                        style="margin-left:240px; color:#145b77; letter-spacing: 5px;font-size: 20px; padding-top: 20px; font-family: 'poppins'; font-weight: 700;">
+                        Kelas</h2>
+                    <input type="text" name="kelas" id="nama"
+                        style="border: none; background-color: skyblue; width:580px; height: 40px; font-size: 30px; border-radius: 10px; text-align: center;">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="judul">
+            <h1>Pilih Pasangan Calon Ketua Osis Periode 2022-2023</h1>
+            <img src="asset/tigan pose 5.png" alt="" width="200px"
+                style="position: absolute; margin-top: 360px; margin-left: 75vw;">
+        </div>
+        <div class="content">
+            <img src="asset/bianka-pose-5.png" alt="" width="200px" style="position: absolute; margin-top: 300px;">
+
+            <div class="voting" style="padding-bottom:100px;">
+                <div class="kiri">
+                    <div class="k-1">
+                        <h1 style="margin-top: 19px;"> Calon No. 1</h1>
+                        <div class="gambar"><img src="asset/258785348_1460708294325525_1845960312800178608_n.png" alt=""
+                                style="  width: 100%;margin-top: 30px;"></div>
+                        <input type="radio" name="pilihan" value="1"
+                            style="width: 50%; border-radius: 10px; height: 30px; margin-top: 30px; border: none; margin-bottom: 30px; color: aliceblue; background-color: #145b77; font-family: 'quicksand'; font-weight: 900; font-size: 20px;">
+                    </div>
+                </div>
+                <div class="kanan">
+                    <div class="k-1">
+                        <h1 style="margin-top: 19px;"> Calon No. 2</h1>
+                        <div class="gambar"><img src="asset/258191262_1834333326765855_5297038771006930333_n.png" alt=""
+                                style="  width: 100%;margin-top: 30px;"></div>
+                        <input type="radio" name="pilihan" value="2"
+                            style="width: 50%; border-radius: 10px; height: 30px; margin-top: 30px; border: none; margin-bottom: 30px; color: aliceblue; background-color: #145b77; font-size: 20px; font-weight: 900; font-family: 'quicksand';">
+                    </div>
+                </div>
+
+                <input class="submit" type="submit" name="submit" value="simpan"
+                    style="width: 10%; border-radius: 10px; height: 30px;  border: none; margin-bottom: 30px; color: aliceblue; background-color: #145b77; font-size: 20px; font-weight: 900; font-family: 'quicksand';">
+
+            </div>
+
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>

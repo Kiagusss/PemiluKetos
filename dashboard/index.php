@@ -916,17 +916,21 @@ $query ="SELECT * FROM data_siswa WHERE pilihan='1'";
 											<table class="table text-center bg-info-hover tr-rounded order-tbl">
 												<thead>
 													<tr>
-														<th class="text-left">Id</th>
-														<th class="text-center">Nama</th>
-														<th class="text-right">Kelas</th>
+														<th class="text-center">Ketua</th>
+														<th class="text-right">Wakil</th>
 													</tr>
 												</thead>
 												<tbody>
+												<?php
+                      $sql = ("SELECT*FROM candidate ORDER BY nomor limit 3");
+                      $query = mysqli_query($connect, $sql);
+                      while($data = mysqli_fetch_array($query)){
+                        echo"
 													<tr>
-														<td class="text-left">82.3</td>
-														<td>0.15</td>
-														<td class="text-right">$134,12</td>
+														<td>$data[nama_ketua]</td>
+														<td>$data[nama_wakil]</td>
 													</tr>
+													";}?>
 												</tbody>
 											</table>
 										</div>
