@@ -15,11 +15,11 @@ include 'koneksi.php'
 
 <body>
     <div class="hasilvote">
-        <h1>Hasil Vote</h1>
-        <h2>Sementara</h2>
+        <h1>Temporary</h1>
+        <h2>Vote Results</h2>
         <div class="inicard">
             <div class="card1">
-                <h3>Kandidat 1</h3> <br>
+                <h3>001</h3> <br>
                 <?php
                         $sql = "SELECT COUNT(*) FROM data_vote WHERE pilihan='1'";
                         $query = mysqli_query($connect, $sql);
@@ -30,7 +30,7 @@ include 'koneksi.php'
             </div>
 
             <div class="card2">
-                <h3>Kandidat 2</h3> <br>
+                <h3>002</h3> <br>
                 <?php
                         $sql = "SELECT COUNT(*) FROM data_vote where pilihan='2'";
                         $query = mysqli_query($connect, $sql);
@@ -42,7 +42,7 @@ include 'koneksi.php'
         </div>
 
         <div class="back">
-            <button><a href="index.html">Kembali</a></button>
+            <button><a href="index.html">Home</a></button>
         </div>
     </div>
     <div class="tigan-bianka">
