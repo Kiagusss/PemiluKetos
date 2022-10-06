@@ -876,7 +876,7 @@ include 'koneksi.php';
                                    
 										<div class="new-arrival-content position-relative">
 										<?php
-									$sql = "SELECT * FROM candidat_1";  
+									$sql = "SELECT * FROM data_candidat";  
 									$query = mysqli_query ($connect, $sql); 
 						
 									while($data = mysqli_fetch_array($query))
@@ -915,7 +915,7 @@ include 'koneksi.php';
                                     <div class="col-md-7 col-xxl-12">
                                         <div class="new-arrival-content position-relative">
 										<?php
-											$sql = "SELECT * FROM candidat_1";  
+											$sql = "SELECT * FROM data_candidat";  
 											$query = mysqli_query ($connect, $sql); 
 								
 											while($data = mysqli_fetch_array($query))

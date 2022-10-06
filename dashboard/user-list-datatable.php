@@ -736,9 +736,6 @@
 							<table class="table style-1" id="ListDatatableView">
 								<thead>
 									<tr>
-										<th>Id</th>
-										<th>Nama</th>
-										<th>Kelas</th>
 										<th>pilihan</th>
 									</tr>
 								</thead>
@@ -747,14 +744,11 @@
 								<?php
 								include 'koneksi.php';
 
-                $sql = "SELECT * FROM data_siswa";
+                $sql = "SELECT * FROM data_vote";
                 $query = mysqli_query ($connect,$sql);
                 while ($data= mysqli_fetch_array($query)){
                     echo"
                     <tr class='data'>
-                    <td>$data[id]</td>
-                    <td>$data[nama]</td>
-                    <td>$data[kelas]</td>
                     <td>$data[pilihan]</td>
             </tr>
         ";

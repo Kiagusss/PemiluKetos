@@ -1,15 +1,15 @@
 ﻿<?php
 include 'koneksi.php';
 
-$query ="SELECT * FROM data_siswa WHERE pilihan='1'";
+$query ="SELECT * FROM data_vote WHERE pilihan='1'";
     $query_run = mysqli_query($connect, $query);
     $row = mysqli_num_rows($query_run);
 
-    $query1 ="SELECT * FROM data_siswa WHERE pilihan='2'";
+    $query1 ="SELECT * FROM data_vote WHERE pilihan='2'";
     $query_run1 = mysqli_query($connect, $query1);
     $row1 = mysqli_num_rows($query_run1);
 
-	$query2 ="SELECT * FROM data_siswa";
+	$query2 ="SELECT * FROM data_vote";
 	$query_run2 = mysqli_query($connect, $query2);
 	$row2 = mysqli_num_rows($query_run2);
 	
