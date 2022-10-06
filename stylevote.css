@@ -4,7 +4,7 @@ body {
     /* display: flex; */
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    height: 110vh;
+    height: 90vh;
     background-image: url(asset/background.png);
     background-position-x: 50%;
     /* justify-content: center;
@@ -21,7 +21,7 @@ body {
 .judul h1 {
     font-size: 28px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 100px;
     color: #EEF2E6;
     text-shadow: 1px 1px 4px black;
     word-spacing: 8px;
@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 13%;
 }
 .kiri {
     /* background-color: yellow; */
@@ -81,7 +81,7 @@ button:hover {
 }
 .kanan {
     /* background-color: green; */
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -100,9 +100,19 @@ button:hover {
 .content {
     display: flex;
     flex-direction: column;
+    z-index: 0;
+    margin-top: 10vh;
 }
-
-.submit {
-    position: absolute;
-    top: 145vh;
+.submit{
+    position: relative;
+    padding: 10px 30px;
+    left: -38vw;
+    top: 40vh;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #003145;
+    color: #EEF2E6;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
