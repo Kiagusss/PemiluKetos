@@ -21,7 +21,7 @@ include 'koneksi.php'
             <div class="card1">
                 <h3>Kandidat 1</h3> <br>
                 <?php
-                        $sql = "SELECT COUNT(*) FROM data_siswa WHERE pilihan='1'";
+                        $sql = "SELECT COUNT(*) FROM data_vote WHERE pilihan='1'";
                         $query = mysqli_query($connect, $sql);
 
                         $total = mysqli_fetch_array($query);
@@ -32,7 +32,7 @@ include 'koneksi.php'
             <div class="card2">
                 <h3>Kandidat 2</h3> <br>
                 <?php
-                        $sql = "SELECT COUNT(*) FROM data_siswa where pilihan='2'";
+                        $sql = "SELECT COUNT(*) FROM data_vote where pilihan='2'";
                         $query = mysqli_query($connect, $sql);
 
                         $total = mysqli_fetch_array($query);
