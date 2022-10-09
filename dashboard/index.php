@@ -11,7 +11,7 @@ $query ="SELECT * FROM data_vote WHERE pilihan='1'";
 
 	$query2 ="SELECT * FROM data_vote";
 	$query_run2 = mysqli_query($connect, $query2);
-	$row2 = mysqli_num_rows($query_run2)
+	$row2 = mysqli_num_rows($query_run2);
 	
 ?>
 
@@ -590,16 +590,6 @@ $query ="SELECT * FROM data_vote WHERE pilihan='1'";
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
-							<div class="input-group search-area right d-lg-inline-flex d-none">
-								<input type="text" class="form-control" placeholder="Find something here...">
-								<div class="input-group-append">
-									<span class="input-group-text">
-										<a href="javascript:void(0)">
-											<i class="flaticon-381-search-2"></i>
-										</a>
-									</span>
-								</div>
-							</div>
                         </div>
                         <ul class="navbar-nav header-right main-notification">
 							<li class="nav-item dropdown notification_dropdown">
@@ -750,7 +740,8 @@ $query ="SELECT * FROM data_vote WHERE pilihan='1'";
                             
                                 <ul aria-expanded="false">
                                     <li><a href="user-list-datatable.php">User List</a></li>
-									<li><a href="ecom-product-list.php">Candidat List</a></li>
+									<li><a href="ecom-product-list-datatable.php">List Candidate </a></li>
+									
                                 </ul>
                             </li>
 							
@@ -875,18 +866,33 @@ $query ="SELECT * FROM data_vote WHERE pilihan='1'";
 					</div>
 				</div>
 					
-
+				<div class="text-riwayat">
+					<h1>Riwayat Pemilih</h1>
+				</div>
 				<div class="riwayatvote">
-					<table>
-						<tr>
-							<th>Id</th>
-							<th>Nama</th>
-							<th>Kelas</th>
-							<th>Pilihan</th>
+					<table width="91%" style="background-color: #3B3363; border-radius:10px;" >
+						<tr style="background-color:#eb8153; border-radius:10px;">
+							<th style="font-size:20px; padding-left:30px; color:white;">Id</th>
+							<th style="font-size:20px; color:white;">Nama</th>
+							<th style="font-size:20px; color:white;">Kelas</th>
+							<th style="font-size:20px; color:white;">Pilihan</th>
 						</tr>
-						<tr>
-							
-						</tr>
+						<?php
+								include 'koneksi.php';
+
+                $sql = "SELECT * FROM data_siswa order by id desc limit 5";
+                $query = mysqli_query ($connect,$sql);
+                while ($data= mysqli_fetch_array($query)){
+                    echo"
+                    <tr class='data'>
+                    <td style='font-size:18px; padding-left:35px;'>$data[id]</td>
+                    <td style='font-size:18px; padding-left:5px; text-align:left;'>$data[nama]</td>
+                    <td style='font-size:18px;'>$data[kelas]</td>
+                    <td style='font-size:18px; padding-left:29px;'>$data[pilihan]</td>
+            </tr>
+        ";
+                } 
+        ?>
 					</table>
 
 				</div>

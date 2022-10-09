@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+        <!-- Aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -36,7 +39,7 @@
             <div class="kotak-3"></div>
         </div>
 
-        <div id="text" class="judul">
+        <div id="text" class="judul" data-aos="zoom-in-up" data-aos-duration="2000">
             <h1>STAR<span>BHAK</span></h1>
             <h2>ELEC<span>TION</span></h2>
             <P>Who Will Be The Next Leader?</P>
@@ -56,28 +59,28 @@
     <div id="candidate-1" class="candidate-1">
         <div class="row-kiri">
             <div class="visi-text">
-                <h3>Visi</h3>
-                <p>Mendukung terciptanya lingkungan belajar yang kompetitif untuk meningkatkan pencapaian prestasi
+                <h3 data-aos="fade-right" data-aos-offset="300">Visi</h3>
+                <p data-aos="fade-up-right" data-aos-offset="300" data-aos-delay="200">Mendukung terciptanya lingkungan belajar yang kompetitif untuk meningkatkan pencapaian prestasi
                     akademik maupun non-akademik siswa berdasarkan IMTAQ dan IPTEK</p>
             </div>
-            <div class="waketos">
+            <div class="waketos" data-aos="fade-up" data-aos-offset="10" data-aos-delay="200">
                 <h3>Sulistiawati</h3>
                 <p>As Calon Wakil Ketua Osis</p>
             </div>
         </div>
-        <div class="row-tengah">
+        <div class="row-tengah" data-aos="zoom-in-up" data-aos-offset="400" data-aos-duration="1000">
             <h2>Candidate 1</h2>
             <div class="kerangka"></div>
             <img src="asset/1.jpeg" alt="">
         </div>
         <div class="row-kanan">
-            <div class="ketos">
+            <div class="ketos" data-aos="fade-down" data-aos-offset="300">
                 <h3>Nalendra Gusti</h3>
                 <p>As Calon Ketua Osis</p>
             </div>
             <div class="misi-text">
-                <h3>Misi</h3>
-                <p>1. Mengutamakan aspek Ketuhanan Yang Maha Esa dalam segala aspek kegiatan di sekolah. <br>
+                <h3 data-aos="fade-left" data-aos-offset="300">Misi</h3>
+                <p data-aos="fade-up-left" data-aos-offset="200" data-aos-delay="200">1. Mengutamakan aspek Ketuhanan Yang Maha Esa dalam segala aspek kegiatan di sekolah. <br>
                     2. Membangun dan meningkatkan kesadaran warga sekolah terhadap Lingkungan hidup di sekolah. <br>
                     3. Membentuk program belajar untuk meningkatkan prestasi belajar siswa.</p>
             </div>
@@ -89,29 +92,29 @@
     <div id="candidate-2" class="candidate-2">
         <div class="row-kiri">
             <div class="visi-text">
-                <h3>Visi</h3>
-                <p>Menjadikan OSIS sebagai wadah penyalur aspirasi dan kreativitas siswa serta menjadi penggerak
+                <h3  data-aos="fade-right" data-aos-offset="300">Visi</h3>
+                <p data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="200">Menjadikan OSIS sebagai wadah penyalur aspirasi dan kreativitas siswa serta menjadi penggerak
                     kegiatan enterpreneur berdasarkan IMTAQ dan IPTEK.
                 </p>
             </div>
-            <div class="waketos2">
-                <h3>Omar Nur Rahmatasyah</h3>
+            <div class="waketos2" data-aos="fade-up" data-aos-offset="10" data-aos-delay="200">
+                <h3 >Omar Nur Rahmatasyah</h3>
                 <p>As Calon Wakil Ketua Osis</p>
             </div>
         </div>
-        <div class="row-tengah">
+        <div class="row-tengah" data-aos="zoom-in-up" data-aos-offset="400" data-aos-duration="1000">
             <h2>Candidate 2</h2>
             <div class="kerangka"></div>
             <img src="asset/2.jpeg" alt="">
         </div>
         <div class="row-kanan">
-            <div class="ketos2">
+            <div class="ketos2" data-aos="fade-down" data-aos-offset="300">
                 <h3>Rafqi Faqihatul HQ</h3>
                 <p>As Calon Ketua Osis</p>
             </div>
             <div class="misi-text">
-                <h3>Misi</h3>
-                <p> 1. wadah belajar kelompok terpadu bagi siswa <br>
+                <h3 data-aos="fade-left" data-aos-offset="300">Misi</h3>
+                <p data-aos="fade-up-left" data-aos-offset="200" data-aos-delay="200"> 1. wadah belajar kelompok terpadu bagi siswa <br>
                     2. Meningkatkan bakat dan potensi yang dimiliki siswa dengan mengadakan/mengaktifkan kegiatan
                     ekstrakulikuler atau pelatihan yang mendukung terciptanya kegiatan tersebut <br>
                     3. Mengembangkan Jiwa kewirausahaan di kalangan para siswa</p>
@@ -201,6 +204,18 @@
             </div>
         </div>
     </div>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+  <script>gsap.registerPlugin(TextPlugin);
+    gsap.from(".judul p", {duration: 3, text: "",})
+</script>
 </body>
 
 </html>
