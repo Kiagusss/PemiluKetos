@@ -740,7 +740,7 @@ $query ="SELECT * FROM data_vote WHERE pilihan='1'";
                             
                                 <ul aria-expanded="false">
                                     <li><a href="user-list-datatable.php">User List</a></li>
-									<li><a href="user-list-datatable.php">List Candidate </a></li>
+									<li><a href="ecom-product-list-datatable.php">List Candidate </a></li>
 									
                                 </ul>
                             </li>
